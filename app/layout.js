@@ -1,5 +1,8 @@
+
 import { ChakraProvider } from '@chakra-ui/react';
 import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export const metadata = {
   title: 'Furniro',
@@ -11,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ChakraProvider>
-          {children}
+          <Navbar />
+            {children}
+          {/* <Footer /> */}
         </ChakraProvider>
       </body>
     </html>
